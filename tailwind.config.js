@@ -2,7 +2,12 @@
 module.exports = {
   content: ["*"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        heebo: ["Heebo", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
