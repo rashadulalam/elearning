@@ -8,8 +8,45 @@
   <title>Elearning</title>
 </head>
 <body>
-  <h1 class="text-7xl text-center bg-red-500 py-2 text-red-100">Hello world</h1>
-  <h1 class="text-7xl text-center bg-red-500 py-2 text-red-100">Hello world</h1>
-  <div class="text-7xl text-center py-2">Hello world </div>
+  <header class="bg-white py-4 border-b border-slate-200 shadow-sm relative">
+    <div class="container flex items-center justify-between">
+      
+      <!-- logo -->
+      <div>
+        <a href="index.html" class="text-teal-400 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+          </svg>
+          <span class="text-3xl font-medium tracking-wider ml-2">eLearning</span>          
+        </a>
+      </div>
+      <button class="border border-teal-400 px-2 py-px text-teal-400 cursor-pointer hover:text-teal-500 hover:border-teal-500 transition-all duration-200" id="menuBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+
+      <nav class="absolute top-20 left-0 right-0 p-4 bg-white shadow-md" id="menu">
+        <ul>
+          <li><a href="" class="block py-3 uppercase font-medium cursor-pointer hover:text-teal-400 transition-all duration-200">Home</a></li>
+          <li><a href="" class="block py-3 uppercase font-medium cursor-pointer hover:text-teal-400 transition-all duration-200">About</a></li>
+          <li><a href="" class="block py-3 uppercase font-medium cursor-pointer hover:text-teal-400 transition-all duration-200">Courses</a></li>
+          <li><a href="" class="block py-3 uppercase font-medium cursor-pointer hover:text-teal-400 transition-all duration-200">Pages</a></li>
+          <li><a href="" class="block py-3 uppercase font-medium cursor-pointer hover:text-teal-400 transition-all duration-200">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="hidden">
+        <span>join now</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        </svg>        
+      </button>
+      
+    </div>
+  </header>
+  
+
+  <script src="js/script.js"></script>
 </body>
 </html>
