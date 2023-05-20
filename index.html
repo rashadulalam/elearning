@@ -26,7 +26,7 @@
         </svg>
       </button>
 
-      <nav class="absolute sm:static sm:flex sm:items-center top-16 left-0 right-0 p-8 sm:p-0 bg-white shadow-md sm:shadow-none" id="menu">
+      <nav class="absolute sm:static sm:flex sm:items-center top-16 left-0 right-0 p-8 sm:p-0 bg-white shadow-md sm:shadow-none hidden" id="menu">
         <ul class="sm:flex ">
           <li><a href="" class="block py-3 sm:px-4 sm: sm:py-6 sm:text-sm uppercase font-medium cursor-pointer hover:text-teal-400 transition-all duration-200">Home</a></li>
           <li><a href="" class="block py-3 sm:px-4 sm:py-6 sm:text-sm uppercase font-medium cursor-pointer hover:text-teal-400 transition-all duration-200">About</a></li>
@@ -49,12 +49,28 @@
     </div>
   </header>
   <main>
-    <section class="h-screen bg-[url('/img/graduated.jpg')] bg-cover bg-center bg-no-repeat">
-
+    <section class="h-screen bg-[url('/img/graduated.jpg')] bg-cover bg-center bg-no-repeat relative before:absolute before:inset-0 before:bg-slate-900/60 z-20 before:-z-10">
+      <div class="container">
+        <div class="max-w-3xl h-screen flex flex-col justify-center space-y-4 text-center">
+          <h4 class="text-teal-400 text-xl font-medium uppercase">best online courses</h4>
+          <h3 class="text-5xl capitalize font-extrabold text-white shadow-sm">the best online learning platform</h3>
+          <p class="text-lg text-white tracking-wide font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, cupiditate natus tempora libero velit blanditiis.</p>
+          <div class="flex space-x-6 justify-center pt-10">
+            <a href="" class="bg-teal-400 text-white px-4 py-2 capitalize font-medium bg-opacity-80 hover:bg-opacity-100 transition-all duration-200">read more</a>
+            <a href="" class="bg-white text-slate-900 px-4 py-2 capitalize font-medium bg-opacity-80 hover:bg-opacity-100 transition-all duration-200">join now</a>
+          </div>
+        </div>
+      </div>
 
     </section>
   </main>
-  
+  <blockquote class="max-w-2xl mx-auto p-5 text-2xl font-semibold italic text-center text-slate-900 ">
+    When you look
+      <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-300 relative inline-block">
+        <span class="relative text-white">annoyed</span>
+      </span>
+    all the time, people think that you're busy.
+  </blockquote>
 
   <script src="js/script.js"></script>
 </body>
